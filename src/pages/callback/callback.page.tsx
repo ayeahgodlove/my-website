@@ -1,7 +1,7 @@
 import React from "react";
 // import { useDispatch } from "react-redux";
 import { Redirect } from "react-router-dom";
-import { SpinnerComponent } from "../../components/shared/spinner.component";
+import { SpinnerComponent } from "../../components/shared/spinner/spinner.component";
 import { useToken } from "../../hooks/token/token.hook";
 
 const CallbackPage: React.FC = () => {

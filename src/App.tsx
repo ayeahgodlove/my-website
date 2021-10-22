@@ -1,5 +1,6 @@
 import React from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
+import { AppRoutes } from "./routes/app-routes";
 
 const App: React.FC = () => {
   return (
@@ -10,9 +11,7 @@ const App: React.FC = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Ayeah Godlove Akoni</title>
       </Helmet>
-      <div className="App">
-        <h1>My Personal Website</h1>
-      </div>
+      <AppRoutes />
     </HelmetProvider>
   );
 };

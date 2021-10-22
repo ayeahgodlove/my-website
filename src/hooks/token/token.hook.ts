@@ -16,7 +16,7 @@ const useToken = () => {
           tokenActions.fetchTokensSuccess({ access_token: accessToken })
         );
         setTokenLoaded(true);
-      } catch (e) {
+      } catch (e: any) {
         setTokenLoaded(false);
         dispatch(tokenActions.fetchTokensError(e.message));
       }
