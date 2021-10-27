@@ -7,6 +7,15 @@ import { persistor, store } from "./redux/store";
 import { Auth0Provider as AuthProvider } from "@auth0/auth0-react";
 import "bootstrap/scss/bootstrap.scss";
 import { PersistGate } from "redux-persist/integration/react";
+import { ApolloProvider, ApolloClient, InMemoryCache } from "@apollo/client";
+
+const client = new ApolloClient({
+  cache: new InMemoryCache(),
+  uri: process.env.REACT_APP_CONTENTFUL_URI,
+  headers: {
+    Authorization: `Bearer ${process.env.REACT_APP_CONTENT_DELIVERY_API_KEY}`,
+  },
+});
 
 ReactDOM.render(
   <React.StrictMode>
@@ -19,7 +28,9 @@ ReactDOM.render(
         scope="read:current_user"
       >
         <PersistGate persistor={persistor}>
-          <App />
+          <ApolloProvider client={client}>
+            <App />
+          </ApolloProvider>
         </PersistGate>
       </AuthProvider>
     </Provider>

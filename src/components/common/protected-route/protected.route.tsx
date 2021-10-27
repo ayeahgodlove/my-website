@@ -9,7 +9,7 @@ const PrivateRoute: React.FC<RouteProps> = ({
   const { isAuthenticated } = useAuth0();
 
   if (!isAuthenticated) {
-    return <Redirect to="/login" />;
+    return <Redirect to="/welcome" />;
   }
 
   return <Route {...rest} component={Component} />;

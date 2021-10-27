@@ -3,6 +3,7 @@ import { persistReducer } from "redux-persist";
 import { ThunkAction } from "redux-thunk";
 import storageSession from "redux-persist/lib/storage/session";
 import { tokenReducer } from "./token/token.reducer";
+import { postReducer } from "./posts/post.reducer";
 
 const persistConfig = {
   key: "root",
@@ -12,6 +13,7 @@ const persistConfig = {
 
 export const rootReducer = combineReducers({
   token: tokenReducer,
+  post: postReducer,
 });
 
 export default persistReducer<rootState>(persistConfig, rootReducer);
