@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import resume from "../img/me.jpg";
-import PrimaryButton from "./PrimaryButton";
+import PrimaryButton, { PrimaryButtonExtra } from "./PrimaryButton";
 
 const ImageSection: React.FC = () => {
   return (
@@ -39,7 +39,7 @@ const ImageSection: React.FC = () => {
             <p>: Software Developer and Freelance</p>
           </div>
         </div>
-        <PrimaryButton title={"Download Cv"} />
+        <PrimaryButtonExtra title={"Download Cv"} link={"https://drive.google.com/file/d/1jPmbPNDFOSW1FnhmCPY1UN8mAebr21Fk/view?usp=sharing"} />
       </div>
     </ImageSectionStyled>
   );

@@ -1,5 +1,6 @@
 {
   "name": "my-website",
+  "homepage": "https://ayeahgodlove.github.io/my-website/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -20,6 +21,7 @@
     "axios": "^0.23.0",
     "bootstrap": "^4.6.0",
     "framer-motion": "4",
+    "gh-pages": "^3.2.3",
     "graphql": "^15.6.1",
     "node-sass": "^6.0.1",
     "react": "^17.0.2",
@@ -45,6 +47,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

@@ -1,11 +1,17 @@
+import { link } from "fs";
 import React from "react";
 import styled from "styled-components";
 
 interface IProps {
   title: string;
+  link?: string;
 }
 const PrimaryButton: React.FC<IProps> = ({ title }) => {
-  return <PrimaryButtonStyled download={"text.tx"}>{title}</PrimaryButtonStyled>;
+  return <PrimaryButtonStyled>{title}</PrimaryButtonStyled>;
+};
+
+export const PrimaryButtonExtra: React.FC<IProps> = ({ title, link }) => {
+  return <PrimaryButtonStyled href={link} target="_blank">{title}</PrimaryButtonStyled>;
 };
 
 const PrimaryButtonStyled = styled.a`
