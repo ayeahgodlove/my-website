@@ -39,7 +39,7 @@ const ImageSection: React.FC = () => {
             <p>: Software Developer and Freelance</p>
           </div>
         </div>
-        <PrimaryButtonExtra title={"Download Cv"} link={"https://drive.google.com/file/d/1jPmbPNDFOSW1FnhmCPY1UN8mAebr21Fk/view?usp=sharing"} />
+        <PrimaryButtonExtra title={"Download Cv"} link={"https://drive.google.com/file/d/1aLdZycaIO3xZUnwjQX83VWcj_W3tgXZd/view?usp=sharing"} />
       </div>
     </ImageSectionStyled>
   );
