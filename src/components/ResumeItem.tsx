@@ -30,6 +30,7 @@ const ResumeItemStyled = styled.div`
     h6 {
       font-size: 80%;
     }
+
   }
   &:not(:last-child) {
     padding-bottom: 3rem;

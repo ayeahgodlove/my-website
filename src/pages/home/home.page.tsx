@@ -17,7 +17,7 @@ const HomePage: React.FC = () => {
           Hi, I'm <span>Ayeah Godlove Akoni</span>
         </h1>
         <p>
-          And I simply love building finding solution to existing problems.
+          And I simply love finding solution to problems.
         </p>
         <div className="icons">
           <a href="https://twitter.com/GodloveAyeah" className="icon i-twitter">
