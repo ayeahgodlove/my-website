@@ -45,6 +45,8 @@ const App: React.FC = () => {
             content="width=device-width, initial-scale=1.0"
           />
           <title>Ayeah Godlove Akoni</title>
+          <meta name="description" content="Portfolio Website built with Reactjs, Contentful for blogs, react-particles for animation, auth0 for authentication" />
+          <meta name="keywords" content="Ayeah Godlove,Portfolio Website" />
         </Helmet>
       </HelmetProvider>
 
