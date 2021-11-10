@@ -3,7 +3,7 @@ import Resume from "../../components/Resume";
 import Skills from "../../components/Skills";
 import { MainLayout } from "../../styles/Layouts";
 
-const ResumePage = () => {
+const ResumePage: React.FC = () => {
   return (
     <MainLayout>
       <Skills />

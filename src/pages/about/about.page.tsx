@@ -6,7 +6,7 @@ import ServicesSection from "../../components/ServicesSection";
 import Title from "../../components/Title";
 import { MainLayout } from "../../styles/Layouts";
 
-function AboutPage() {
+const AboutPage: React.FC = () => {
   return (
     <MainLayout>
       <AboutStyled>
@@ -17,7 +17,7 @@ function AboutPage() {
       </AboutStyled>
     </MainLayout>
   );
-}
+};
 
 const AboutStyled = styled.section``;
 

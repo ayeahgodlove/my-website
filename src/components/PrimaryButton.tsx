@@ -5,7 +5,7 @@ interface IProps {
   title: string;
 }
 const PrimaryButton: React.FC<IProps> = ({ title }) => {
-  return <PrimaryButtonStyled>{title}</PrimaryButtonStyled>;
+  return <PrimaryButtonStyled download={"text.tx"}>{title}</PrimaryButtonStyled>;
 };
 
 const PrimaryButtonStyled = styled.a`

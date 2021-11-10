@@ -1,27 +1,68 @@
 import React from "react";
 import styled from "styled-components";
 import Title from "../../components/Title";
-import blogs from "../../data/blogs";
 import { InnerLayout, MainLayout } from "../../styles/Layouts";
+import { useQuery, gql } from "@apollo/client";
+import { Spin } from "antd";
+// import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 
-const BlogsPage = () => {
+const QUERY = gql`
+  {
+    myBlogPostsCollection {
+      total
+      items {
+        title
+        description {
+          json
+        }
+        createdAt
+        image {
+          fileName
+          size
+          description
+          url
+        }
+      }
+    }
+  }
+`;
+
+const BlogsPage: React.FC = () => {
+  const { data, loading } = useQuery(QUERY);
+
+  if (!loading) {
+    console.log("data: ", data.myBlogPostsCollection);
+  }
   return (
     <MainLayout>
       <BlogsStyled>
         <Title title={"Blogs"} span={"Blogs"} />
         <InnerLayout className={"blog"}>
-          {blogs.map((blog) => {
-            return (
-              <div key={blog.id} className={"blog-item"}>
-                <div className="image">
-                  <img src={blog.image} alt="" />
-                </div>
-                <div className="title">
-                  <a href={blog.link}>{blog.title}</a>
-                </div>
-              </div>
-            );
-          })}
+          {loading ? (
+            <>
+              <Spin size="large" style={{ color: "#f4f4f4" }} />
+            </>
+          ) : (
+            <>
+              {data.myBlogPostsCollection.items.map(
+                (item: any, index: number) => {
+                  return (
+                    <div key={index} className={"blog-item"}>
+                      <div className="image">
+                        <img
+                          src={item.image.url}
+                          alt={item.image.description}
+                        />
+                      </div>
+                      <div className="title">
+                        <a href={item.link}>{item.title}</a>
+                      </div>
+                    </div>
+                  );
+                }
+              )}
+            </>
+          )}
         </InnerLayout>
       </BlogsStyled>
     </MainLayout>

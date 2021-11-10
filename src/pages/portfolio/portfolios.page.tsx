@@ -10,7 +10,7 @@ const allButtons: any[] = [
   ...(new Set(portfolios.map((item) => item.category)) as any),
 ];
 
-function PortfoliosPage() {
+const PortfoliosPage: React.FC = () => {
   const [menuItem, setMenuItems] = useState(portfolios);
   const [button, setButtons] = useState(allButtons);
 
@@ -32,6 +32,6 @@ function PortfoliosPage() {
       </InnerLayout>
     </MainLayout>
   );
-}
+};
 
 export default PortfoliosPage;

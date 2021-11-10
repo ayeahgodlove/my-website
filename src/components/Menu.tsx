@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import GitHub from "@material-ui/icons/GitHub";
-import Pinterest from "@material-ui/icons/Pinterest";
 import { IMenuItem } from "../models/common/menu-item.model";
+import { RemoveRedEyeOutlined } from "@material-ui/icons";
 
 interface IProps {
   menuItem: IMenuItem[];
@@ -24,7 +24,7 @@ const Menu: React.FC<IProps> = ({ menuItem }) => {
                   </li>
                   <li>
                     <a href={item.link2}>
-                      <Pinterest />
+                      <RemoveRedEyeOutlined />
                     </a>
                   </li>
                 </ul>

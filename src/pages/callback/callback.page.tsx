@@ -1,20 +1,17 @@
+import { useAuth0 } from "@auth0/auth0-react";
 import React from "react";
-// import { useDispatch } from "react-redux";
 import { Redirect } from "react-router-dom";
 import { SpinnerComponent } from "../../components/shared/spinner/spinner.component";
-import { useToken } from "../../hooks/token/token.hook";
 
 const CallbackPage: React.FC = () => {
-  const { loaded } = useToken();
-  if (!loaded) {
+  const { isAuthenticated } = useAuth0();
+  if (!isAuthenticated) {
     return (
       <div className="w-full h-100 d-flex justify-content-center align-items-center">
         <SpinnerComponent />
       </div>
     );
   }
-
-  //   dispatch(fetchInitialDataAsync());
   return <Redirect to="/" />;
 };
 

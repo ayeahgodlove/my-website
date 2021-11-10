@@ -7,7 +7,7 @@ import BusinessCenterIcon from "@material-ui/icons/BusinessCenter";
 import SchoolIcon from "@material-ui/icons/School";
 import ResumeItem from "./ResumeItem";
 
-const Resume = () => {
+const Resume: React.FC = () => {
   const briefcase = <BusinessCenterIcon />;
   const school = <SchoolIcon />;
   return (
@@ -19,27 +19,35 @@ const Resume = () => {
         </div>
         <div className="resume-content">
           <ResumeItem
-            year={"2015 - 2020"}
-            title={"Computer Science Teacher"}
-            subTitle={"Sussex University"}
+            year={"2019 - 2020"}
+            title={"Google Africa Developer's Scholarship 2019 (GAD's)"}
+            subTitle={"Andela | Plurasight | @GrowWithGoogle"}
             text={
-              "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa nihil impedit natus nostrum? Velit accusantium id quos, nihil vel quod.Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. "
+              "Learning the concepts of responsive web design, accessibility, user experience, progressive web apps technology with hands on code. Technologies; HTML5, CSS3, JavaScript, Angular, and ReactJs"
             }
           />
           <ResumeItem
-            year={"2015 - Present"}
+            year={"2019 - 2020"}
+            title={"Frontend Web Development"}
+            subTitle={"Yems Group Inc (Y'G)"}
+            text={
+              "Building responsive and scalable websites and application. Used the following technologies; HTML, CSS, Javascript, Bootstrap, SASS for the frontend UI and PHP, MySQl for backend programming"
+            }
+          />
+          <ResumeItem
+            year={"2020 - Present"}
+            title={"Web Developer"}
+            subTitle={"Freelancer"}
+            text={
+              "Building blazing fast web application interfaces with Javascript | Typescript, ReactJs, Redux, C# and ASP.Net Core, PHP | Laravel"
+            }
+          />
+          <ResumeItem
+            year={"2020 - Present"}
             title={"Full Stack Developer"}
-            subTitle={"Microsoft Studios"}
+            subTitle={"Cameroon Baptist Convention Health Service (CBCHS)"}
             text={
-              "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa nihil impedit natus nostrum? Velit accusantium id quos, nihil vel quod.Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. "
-            }
-          />
-          <ResumeItem
-            year={"2010 - 2017"}
-            title={"User Interface Designer"}
-            subTitle={"Google Inc"}
-            text={
-              "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa nihil impedit natus nostrum? Velit accusantium id quos, nihil vel quod.Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. "
+              "Building blazing fast, user-friendly and scalable web application, using the power of ReactJs for frontend, and consuming RESTFul API's built with C#, ASP.Net Core and MSQLServer"
             }
           />
         </div>
@@ -48,27 +56,27 @@ const Resume = () => {
         </div>
         <div className="resume-content ">
           <ResumeItem
-            year={"201 - 2022"}
-            title={"Computer Science Degree"}
-            subTitle={"Sussex University"}
+            year={"2016 - 2019"}
+            title={"Bachelor of Technology (B-Tech)"}
+            subTitle={"COLTECH University of Bamenda"}
             text={
-              "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa nihil impedit natus nostrum? Velit accusantium id quos, nihil vel quod.Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. "
+              ""
             }
           />
           <ResumeItem
-            year={"2015 - 2017"}
-            title={"A - Levels"}
-            subTitle={"Church Hill High"}
+            year={"2014 - 2016"}
+            title={"G.C.E Advance - Levels"}
+            subTitle={"G.B.H.S ATIELA NKWEN BAMENDA"}
             text={
-              "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa nihil impedit natus nostrum? Velit accusantium id quos, nihil vel quod.Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. "
+              ""
             }
           />
           <ResumeItem
-            year={"2015 - 2017"}
-            title={"High School Graduation"}
-            subTitle={"ABC School"}
+            year={"2009 - 2014"}
+            title={"G.C.E Ordinary - Levels"}
+            subTitle={"G.B.H.S ATIELA NKWEN BAMENDA"}
             text={
-              "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa nihil impedit natus nostrum? Velit accusantium id quos, nihil vel quod.Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. "
+              ""
             }
           />
         </div>

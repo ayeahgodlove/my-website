@@ -35,7 +35,7 @@ const ResumeItemStyled = styled.div`
     padding-bottom: 3rem;
   }
   .left-content {
-    width: 50%;
+    width: 15%;
     padding-left: 20px;
     position: relative;
     &::before {
@@ -54,6 +54,7 @@ const ResumeItemStyled = styled.div`
     }
   }
   .right-content {
+    width: 80%;
     padding-left: 5rem;
     position: relative;
     &::before {

@@ -1,23 +1,25 @@
 import React from "react";
 import styled from "styled-components";
-import resume from "../img/resume.jpg";
+import resume from "../img/me.jpg";
 import PrimaryButton from "./PrimaryButton";
 
 const ImageSection: React.FC = () => {
   return (
     <ImageSectionStyled>
       <div className="left-content">
-        <img src={resume} alt="" />
+        <img src={resume} alt="" height="700" />
       </div>
       <div className="right-content">
         <h4>
-          I am <span>Lorem Ipsum</span>
+          I am <span>Ayeah Godlove Akoni</span>
         </h4>
         <p className="paragraph">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem,
-          natus quas vero enim praesentium delectus est id fugiat ab libero
-          adipisci recusandae at maxime veritatis! Lorem ipsum, dolor sit amet
-          consectetur adipisicing elit. Excepturi, nesciunt.
+          And I love building solutions to problems.
+          I am strong engineering professional with a <i>Bachelor of Technology in Computer Networks and System Maintenance</i>.
+          2 yrs ago, immediately after my graduation, I fell in love with Software Development I took the decision to switch.
+          It wasn't a smooth sailing journey but I still pulled it, I participate in the <i>Google Africa Developer (GAD's) Scholarship program 2019</i> in the Mobile Web Specialist Track,
+          where I made it amongst the top 1000 selected candidates to take the certification examination, even though we faced a major setback from the rise of the COVID-19 pandemic
+          resulting to the discontinuation of the Program by Google.
         </p>
         <div className="about-info">
           <div className="info-title">
@@ -29,12 +31,12 @@ const ImageSection: React.FC = () => {
             <p>Service</p>
           </div>
           <div className="info">
-            <p>: Lorem Ipsum</p>
-            <p>: 36</p>
-            <p>: Spainsh </p>
-            <p>: Spanish, French, English </p>
-            <p>: London, United Kingdom</p>
-            <p>: Freelance</p>
+            <p>: Ayeah Godlove Akoni</p>
+            <p>: 22</p>
+            <p>: Cameroonian </p>
+            <p>: English, French,  </p>
+            <p>: Bamenda, Cameroon</p>
+            <p>: Software Developer and Freelance</p>
           </div>
         </div>
         <PrimaryButton title={"Download Cv"} />

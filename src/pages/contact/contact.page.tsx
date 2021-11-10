@@ -8,7 +8,7 @@ import Title from "../../components/Title";
 import PrimaryButton from "../../components/PrimaryButton";
 import ContactItem from "../../components/ContactItem";
 
-const ContactPage = () => {
+const ContactPage: React.FC = () => {
   const phone = <PhoneIcon />;
   const email = <EmailIcon />;
   const location = <LocationOnIcon />;
@@ -52,20 +52,20 @@ const ContactPage = () => {
             <ContactItem
               title={"Phone"}
               icon={phone}
-              cont1={"+66-789675637"}
-              cont2={"07663520283"}
+              cont1={"+237-673687549"}
+              cont2={"+237-656175881"}
             />
             <ContactItem
               title={"Email"}
               icon={email}
-              cont1={"loremipsum@gmail.com"}
-              cont2={"info.lorem.ipsum@gmail.com"}
+              cont1={"ayeahgodlove5@gmail.com"}
+              cont2={"ayeahchanser@gmail.com"}
             />
             <ContactItem
               title={"Address"}
               icon={location}
-              cont1={"27 Aldrich Road, London, England"}
-              cont2={"United Kingdom"}
+              cont1={"Nkwen Mile III, Bamenda, North West Province"}
+              cont2={"Cameroon"}
             />
           </div>
         </InnerLayout>

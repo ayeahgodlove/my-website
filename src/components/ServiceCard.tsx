@@ -10,7 +10,7 @@ const ServiceCard: React.FC<IProps> = ({ image, title, paragraph }) => {
   return (
     <ServiceCardStyled>
       <div className="container">
-        <img src={image} alt="" />
+        <img src={image} alt="" width="70" height="70" />
         <h4>{title}</h4>
         <p>{paragraph}</p>
       </div>

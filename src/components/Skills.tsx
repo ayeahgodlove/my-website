@@ -10,13 +10,16 @@ const Skills = () => {
       <Title title={"My Skills"} span={"my skills"} />
       <InnerLayout>
         <div className="skills">
-          <ProgressBar title={"HTML5"} width={"70%"} text={"70%"} />
-          <ProgressBar title={"CSS3"} width={"90%"} text={"90%"} />
-          <ProgressBar title={"JAVASCRIPT"} width={"85%"} text={"85%"} />
-          <ProgressBar title={"JAVA"} width={"60%"} text={"60%"} />
-          <ProgressBar title={"PYTHON"} width={"95%"} text={"95%"} />
+          <ProgressBar title={"Version Control"} width={"80%"} text={"80%"} />
+          <ProgressBar title={"HTML5"} width={"85%"} text={"85%"} />
+          <ProgressBar title={"CSS3"} width={"80%"} text={"80%"} />
+          <ProgressBar title={"BOOTSTRAP | JQuery"} width={"100%"} text={"100%"} />
+          <ProgressBar title={"JAVASCRIPT | Typescript"} width={"75%"} text={"75%"} />
           <ProgressBar title={"React JS"} width={"75%"} text={"75%"} />
-          <ProgressBar title={"UNITY"} width={"75%"} text={"75%"} />
+          <ProgressBar title={"Next JS"} width={"60%"} text={"60%"} />
+          <ProgressBar title={"C# | ASP.Net Core"} width={"50%"} text={"50%"} />
+          <ProgressBar title={"Database (MySQL | SQL Server"} width={"60%"} text={"60%"} />
+          <ProgressBar title={"APIs (REST)"} width={"95%"} text={"95%"} />
         </div>
       </InnerLayout>
     </SkillsStyled>

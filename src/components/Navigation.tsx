@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
-import avatar from "../img/avatar.jpg";
+import avatar from "../img/main.jpg";
 
 const Navigation: React.FC = () => {
   return (
@@ -27,12 +27,17 @@ const Navigation: React.FC = () => {
         </li>
         <li className="nav-item">
           <NavLink to="/portfolios" activeClassName="active-class" exact>
-            Portfolios
+            Portfolio
           </NavLink>
         </li>
         <li className="nav-item">
           <NavLink to="/blogs" activeClassName="active-class" exact>
-            Blogs
+            Blog
+          </NavLink>
+        </li>
+        <li className="nav-item">
+          <NavLink to="/gallery" activeClassName="active-class" exact>
+            Gallery
           </NavLink>
         </li>
         <li className="nav-item">
@@ -43,7 +48,7 @@ const Navigation: React.FC = () => {
       </ul>
       <footer className="footer">
         <p>
-          @2021 <b>Lorem Ipsum</b>
+          @2021 <b>Ready</b>
         </p>
       </footer>
     </NavigationStyled>

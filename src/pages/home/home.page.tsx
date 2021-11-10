@@ -1,11 +1,12 @@
 import React from "react";
 import styled from "styled-components";
-import FacebookIcon from "@material-ui/icons/Facebook";
+import TwitterIcon from "@material-ui/icons/Twitter";
 import GithubIcon from "@material-ui/icons/GitHub";
-import YoutubeIcon from "@material-ui/icons/YouTube";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import Particle from "../../components/Particle";
+import { Facebook } from "@material-ui/icons";
 
-const HomePage = () => {
+const HomePage: React.FC = () => {
   return (
     <HomePageStyled>
       <div className="particle-con">
@@ -13,22 +14,29 @@ const HomePage = () => {
       </div>
       <div className="typography">
         <h1>
-          Hi, I'm <span>Lorem Ipsum</span>
+          Hi, I'm <span>Ayeah Godlove Akoni</span>
         </h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque nihil
-          voluptates ea dolore vel repellat? Quia tenetur non quam
-          exercitationem. Lorem ipsum dolor sit amet.
+          And I simply love building finding solution to existing problems.
         </p>
         <div className="icons">
-          <a href="https://codepen.io/pen/" className="icon i-facebook">
-            <FacebookIcon />
+          <a href="https://twitter.com/GodloveAyeah" className="icon i-twitter">
+            <TwitterIcon />
           </a>
-          <a href="https://codepen.io/pen/" className="icon i-github">
+          <a href="https://github.com/ayeahgodlove" className="icon i-github">
             <GithubIcon />
           </a>
-          <a href="https://codepen.io/pen/" className="icon i-youtube">
-            <YoutubeIcon />
+          <a
+            href="https://www.linkedin.com/in/ayeah-godlove-akoni-0820a0164/"
+            className="icon i-linkedin"
+          >
+            <LinkedInIcon />
+          </a>
+          <a
+            href="https://www.facebook.com/ayeahgodlove/"
+            className="icon i-facebook"
+          >
+            <Facebook />
           </a>
         </div>
       </div>

@@ -3,9 +3,9 @@ import styled from "styled-components";
 import { InnerLayout } from "../styles/Layouts";
 import Title from "./Title";
 import ServiceCard from "./ServiceCard";
-import design from "../img/design.svg";
-import intelligence from "../img/intelligence.svg";
-import gamedev from "../img/game-dev.svg";
+import design from "../img/svgs/web-design-svg.svg";
+import pwa from "../img/svgs/pwa-svg.svg";
+import app from "../img/svgs/app-1.svg";
 
 const ServicesSection = () => {
   return (
@@ -15,25 +15,25 @@ const ServicesSection = () => {
         <div className="services">
           <ServiceCard
             image={design}
-            title={"Web Design"}
+            title={"Web Application Design and Development"}
             paragraph={
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tenetur ratione quod."
+              "I provide solution by design and build responsive mobile first websites and applications for individuals, small and medium size businesses."
             }
           />
           <div className="mid-card">
             <ServiceCard
-              image={intelligence}
-              title={"Artificial Intelligence"}
+              image={app}
+              title={"Mobile Application Development"}
               paragraph={
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tenetur ratione quod."
+                "Leveraging the power of React Native to build and deliver optimal and user friendly mobile cross platform applications."
               }
             />
           </div>
           <ServiceCard
-            image={gamedev}
-            title={"Game Development"}
+            image={pwa}
+            title={"Progressive Web Applications (PWA's)"}
             paragraph={
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tenetur ratione quod."
+              "Transform your pages, websites to appear to users in the same way as native or mobile applications, by leveraging the power of PWA's."
             }
           />
         </div>

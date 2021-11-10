@@ -1,13 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
 import App from "./App";
-import { Provider } from "react-redux";
-import { persistor, store } from "./redux/store";
 import { Auth0Provider as AuthProvider } from "@auth0/auth0-react";
-import "bootstrap/scss/bootstrap.scss";
-import { PersistGate } from "redux-persist/integration/react";
 import { ApolloProvider, ApolloClient, InMemoryCache } from "@apollo/client";
+import { BrowserRouter as Router } from "react-router-dom";
+
+import GlobalStyle from "./styles/GlobalStyle";
 
 const client = new ApolloClient({
   cache: new InMemoryCache(),
@@ -19,21 +17,19 @@ const client = new ApolloClient({
 
 ReactDOM.render(
   <React.StrictMode>
-    <Provider store={store}>
-      <AuthProvider
-        domain={process.env.REACT_APP_DOMAIN!}
-        clientId={process.env.REACT_APP_CLIENT_ID!}
-        // audience={process.env.REACT_APP_AUDIENCE}
-        redirectUri={`${window.location.origin}/callback`}
-        scope="read:current_user"
-      >
-        <PersistGate persistor={persistor}>
-          <ApolloProvider client={client}>
-            <App />
-          </ApolloProvider>
-        </PersistGate>
-      </AuthProvider>
-    </Provider>
+    <AuthProvider
+      domain={process.env.REACT_APP_DOMAIN!}
+      clientId={process.env.REACT_APP_CLIENT_ID!}
+      redirectUri={`${window.location.origin}/callback`}
+      scope="read:current_user"
+    >
+      <ApolloProvider client={client}>
+        <GlobalStyle />
+        <Router>
+          <App />
+        </Router>
+      </ApolloProvider>
+    </AuthProvider>
   </React.StrictMode>,
   document.getElementById("root")
 );
