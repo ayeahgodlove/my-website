@@ -11,7 +11,7 @@ const Navigation: React.FC = () => {
       </div>
       <ul className="nav-items">
         <li className="nav-item">
-          <NavLink to="/" activeClassName="active-class" exact>
+          <NavLink to="/my-website" activeClassName="active-class" exact>
             Home
           </NavLink>
         </li>

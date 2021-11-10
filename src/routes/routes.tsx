@@ -22,7 +22,7 @@ export const routes: IRoutes[] = [
     component: WelcomePage,
   },
   {
-    path: "/",
+    path: "/my-website",
     private: false,
     exact: true,
     component: HomePage,
