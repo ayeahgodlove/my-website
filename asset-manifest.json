@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.js": "/my-website/static/js/main.25680a87.chunk.js",
+    "main.js.map": "/my-website/static/js/main.25680a87.chunk.js.map",
+    "runtime-main.js": "/my-website/static/js/runtime-main.b388697f.js",
+    "runtime-main.js.map": "/my-website/static/js/runtime-main.b388697f.js.map",
+    "static/js/2.ce29a8e2.chunk.js": "/my-website/static/js/2.ce29a8e2.chunk.js",
+    "static/js/2.ce29a8e2.chunk.js.map": "/my-website/static/js/2.ce29a8e2.chunk.js.map",
+    "index.html": "/my-website/index.html",
+    "static/js/2.ce29a8e2.chunk.js.LICENSE.txt": "/my-website/static/js/2.ce29a8e2.chunk.js.LICENSE.txt",
+    "static/media/app-1.355c6258.svg": "/my-website/static/media/app-1.355c6258.svg",
+    "static/media/carrio.c993a5da.png": "/my-website/static/media/carrio.c993a5da.png",
+    "static/media/four.40102f09.jpg": "/my-website/static/media/four.40102f09.jpg",
+    "static/media/main.ed66aabe.jpg": "/my-website/static/media/main.ed66aabe.jpg",
+    "static/media/me.24c8ff06.jpg": "/my-website/static/media/me.24c8ff06.jpg",
+    "static/media/movie.b084bd28.png": "/my-website/static/media/movie.b084bd28.png",
+    "static/media/one.a5de80ba.jpg": "/my-website/static/media/one.a5de80ba.jpg",
+    "static/media/pwa-svg.97a71fa1.svg": "/my-website/static/media/pwa-svg.97a71fa1.svg",
+    "static/media/three.1e4b69a3.jpg": "/my-website/static/media/three.1e4b69a3.jpg",
+    "static/media/two.eb8f5eb8.jpg": "/my-website/static/media/two.eb8f5eb8.jpg",
+    "static/media/weather.6adff9f3.png": "/my-website/static/media/weather.6adff9f3.png",
+    "static/media/web-design-svg.926abf6f.svg": "/my-website/static/media/web-design-svg.926abf6f.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b388697f.js",
+    "static/js/2.ce29a8e2.chunk.js",
+    "static/js/main.25680a87.chunk.js"
+  ]
+}
